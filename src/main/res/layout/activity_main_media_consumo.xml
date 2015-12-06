@@ -1,0 +1,115 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="casadocodigo.com.br.myapplication.MainTelaMeusDados">
+
+
+    <TextView android:text="@string/titleMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/textViewTitleMedia"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/buttonCancelar"
+        android:layout_alignEnd="@+id/buttonCancelar"
+        android:layout_toRightOf="@+id/textViewEnderecoDados"
+        android:layout_toEndOf="@+id/textViewEnderecoDados" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/nomeDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textViewNomeDados"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/textViewTitleMedia"
+        android:layout_toRightOf="@+id/scrollView"
+        android:layout_toEndOf="@+id/scrollView" />
+
+    <TextView
+        android:text="@string/emailDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textViewNomeDados"
+        android:layout_alignLeft="@+id/textViewNomeDados"
+        android:layout_alignStart="@+id/textViewNomeDados" />
+
+
+
+    <TextView
+        android:text="@string/enderecoDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewEnderecoDados"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTipoDeBusca"
+        android:layout_below="@+id/textViewTipoDeBusca"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textViewTipoDeBusca"
+        android:layout_alignStart="@+id/textViewTipoDeBusca" />
+    <TextView
+        android:text="@string/titleDeBusca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewTipoDeBusca"
+        android:layout_below="@+id/textViewEnderecoDados"
+        android:layout_alignLeft="@+id/textViewEnderecoDados"
+        android:layout_alignStart="@+id/textViewEnderecoDados" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textViewEnderecoDados"
+        android:layout_alignEnd="@+id/textViewEnderecoDados" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesquisar"
+        android:id="@+id/buttonPesquisar"
+        android:layout_alignTop="@+id/buttonCancelar"
+        android:layout_toRightOf="@+id/textViewTipoDeBusca"
+        android:layout_toEndOf="@+id/textViewTipoDeBusca" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/buttonCancelar"
+        android:layout_below="@+id/spinnerTipoDeBusca"
+        android:layout_toRightOf="@+id/buttonPesquisar"
+        android:layout_toEndOf="@+id/buttonPesquisar" />
+
+</RelativeLayout>

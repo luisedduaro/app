@@ -1,0 +1,161 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="casadocodigo.com.br.myapplication.MainTelaMeusDados">
+
+
+    <TextView android:text="@string/titleCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/textViewTitleMedia"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/editTextEndereco"
+        android:layout_alignStart="@+id/editTextEndereco" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/nomeDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textViewNomeDados"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/textViewTitleMedia"
+        android:layout_toRightOf="@+id/scrollView"
+        android:layout_toEndOf="@+id/scrollView" />
+
+    <EditText
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewNomeDados"
+        android:layout_toRightOf="@+id/textViewCidadeDados"
+        android:id="@+id/editTextNome"
+        android:layout_alignRight="@+id/editTextEndereco"
+        android:layout_alignEnd="@+id/editTextEndereco" />
+
+    <TextView
+        android:text="@string/emailDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textViewNomeDados"
+        android:layout_alignLeft="@+id/textViewNomeDados"
+        android:layout_alignStart="@+id/textViewNomeDados" />
+
+
+
+    <TextView
+        android:text="@string/enderecoDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewEnderecoDados"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextEndereco"
+        android:layout_above="@+id/textViewCidadeDados"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerTipoDeBusca"
+        android:layout_below="@+id/textViewCidadeDados"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textViewCidadeDados"
+        android:layout_alignStart="@+id/textViewCidadeDados" />
+    <TextView
+        android:text="@string/cidadeDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewCidadeDados"
+        android:layout_below="@+id/textViewEnderecoDados"
+        android:layout_alignLeft="@+id/textViewEnderecoDados"
+        android:layout_alignStart="@+id/textViewEnderecoDados" />
+
+    <TextView
+        android:text="@string/bairroDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/textViewBairroDados"
+        android:layout_below="@+id/spinnerTipoDeBusca"
+        android:layout_alignLeft="@+id/spinnerTipoDeBusca"
+        android:layout_alignStart="@+id/spinnerTipoDeBusca" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerBairroDados"
+        android:layout_below="@+id/textViewBairroDados"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textViewBairroDados"
+        android:layout_alignStart="@+id/textViewBairroDados" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignRight="@+id/textViewEnderecoDados"
+        android:layout_alignEnd="@+id/textViewEnderecoDados" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/editTextNome"
+        android:layout_alignStart="@+id/editTextNome"
+        android:layout_alignRight="@+id/editTextNome"
+        android:layout_alignEnd="@+id/editTextNome" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="salvar"
+        android:id="@+id/buttonPesquisar"
+        android:layout_marginBottom="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/buttonCancelar"
+        android:layout_alignTop="@+id/buttonPesquisar"
+        android:layout_toRightOf="@+id/buttonPesquisar"
+        android:layout_toEndOf="@+id/buttonPesquisar" />
+
+</RelativeLayout>

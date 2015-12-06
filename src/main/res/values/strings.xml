@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">TelaInicial</string>
+
+    <string name="titleCadastro">Cadastro</string>
+    <string name="nomeDados">Nome:</string>
+    <string name="emailDados">Email:</string>
+    <string name="enderecoDados">Endereco:</string>
+    <string name="cidadeDados">Cidade:</string>
+    <string name="bairroDados">Bairro:</string>
+
+
+    <string-array name="cidades_arrays">
+        <item> Recife </ item>
+        <item> Olinda </ item>
+        <item> Camaragibe </ item>
+        <item> São Lourenço </ item>
+        <item> Jaboatão dos Guararapes </ item>
+    </ string-array>
+
+    <string-array name="bairro_arrays">
+        <item> Ibura </ item>
+        <item> Estancia </ item>
+        <item> Camaragibe </ item>
+        <item> São Lourenço </ item>
+        <item> Jaboatão dos Guararapes </ item>
+    </ string-array>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_tela_principal">MainTelaPrincipal</string>
+    <string name="title_activity_main_cadastro">MainCadastro</string>
+    <string name="title_activity_main_historico">MainHistorico</string>
+    <string name="titleHistorico">Historico de Consumo</string>
+
+    // Tela Historico
+    <string name="titleDeBusca">Tipo de Busca:</string>
+    <string-array name="tipoBusca_arrays">
+        <item> Diaria </ item>
+        <item> Mensal </ item>
+        <item> Trimestral </ item>
+        <item> Semestral </ item>
+        <item> Anual </ item>
+    </ string-array>
+
+    // Tela de Media
+    <string name="titleMedia">Media de Consucmo</string>
+
+    <string name="titleDeMedia">Tipo de Busca:</string>
+    <string-array name="tipoMedia_arrays">
+        <item> Diaria </ item>
+        <item> Mensal </ item>
+        <item> Trimestral </ item>
+        <item> Semestral </ item>
+        <item> Anual </ item>
+    </ string-array>
+
+    <string name="title_activity_main_media_consumo">MainMediaConsumo</string>
+    <string name="title_activity_main_consumo_mes">MainConsumoMes</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+
+</resources>
